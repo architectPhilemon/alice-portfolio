@@ -8,10 +8,97 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans text-gray-800">
+<body class="bg-gray-100 font-sans text-gray-800"><!-- Hero Section -->
+  <section class="bg-blue-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+      <!-- Text Content -->
+      <div class="text-center md:text-left">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-900 mb-4">Alice Mumbe Peter</h1>
+        <p class="text-xl text-blue-800 mb-6">Human Resource Management Professional</p>
+        <a href="#about" class="inline-block bg-blue-700 hover:bg-blue-800 text-white text-lg font-medium py-3 px-6 rounded-full transition">
+          Learn More
+        </a>
+      </div>
+  
+      <!-- Hero Image -->
+      <div class="flex justify-center">
+        <img 
+          src="https://drive.google.com/uc?export=view&id=1ErQIMaiROsNcXezpOt8LAIFgz_BLux5r" 
+          alt="Alice Mumbe Peter" 
+          class="rounded-2xl shadow-lg w-72 sm:w-80 md:w-96 object-cover"
+        />
+      </div>
+    </div>
+  </section>
+  <!-- Navigation Bar -->
+   <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="text-blue-800 font-bold text-xl">Alice Mumbe</div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+          <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-blue-800 text-2xl">☰</button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4 space-y-2">
+      <a href="#home" class="block text-gray-700 hover:text-blue-600 transition">Home</a>
+      <a href="#about" class="block text-gray-700 hover:text-blue-600 transition">About</a>
+      <a href="#contact" class="block text-gray-700 hover:text-blue-600 transition">Contact</a>
+    </div>
+  </header>
+
+<header class="bg-white shadow-md fixed top-0 w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo/Brand -->
+      <div class="flex-shrink-0 text-blue-800 font-bold text-xl">
+        Alice Mumbe
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-blue-800 focus:outline-none text-2xl">
+          ☰
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4 space-y-2">
+    <a href="#home" class="block text-gray-700 hover:text-blue-600 transition">Home</a>
+    <a href="#about" class="block text-gray-700 hover:text-blue-600 transition">About</a>
+    <a href="#contact" class="block text-gray-700 hover:text-blue-600 transition">Contact</a>
+  </div>
+</header>
+
+<script>
+  // Mobile toggle functionality
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  });
+</script>
+
 
   <!-- Header -->
-  <header class="bg-blue-900 text-white py-10 shadow-md">
+  <header class="bg-pink-900 text-white py-10 shadow-md">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h1 class="text-4xl md:text-5xl font-bold tracking-wide">Alice Mumbe Peter</h1>
       <p class="text-lg md:text-xl mt-2">Human Resource Management Professional</p>
@@ -23,35 +110,60 @@
   </header>
 
   <!-- About Me -->
-  <section class="max-w-6xl mx-auto px-6 py-10">
-    <div class="bg-white p-6 md:p-10 rounded-2xl shadow-lg">
+  <section class="bg-orange-900 text-white py-10 shadow-md">
+    <div class="bg-cadetblue p-6 md:p-10 rounded-2xl shadow-lg">
       <h2 class="text-2xl font-semibold text-blue-800 mb-4">About Me</h2>
-      <p class="text-gray-700 leading-relaxed">
+      <p class="text-purple-700 leading-relaxed text-decoration-italic">
         Hello! I'm <strong>Alice Mumbe Peter</strong>, a dedicated Human Resource Management professional
         passionate about creating positive work environments. With deep experience in talent development,
         employee engagement, and strategic planning, I aim to bring out the best in people and empower
         teams to thrive in every organization.
       </p>
     </div>
-  </section><!-- Image Section Below About -->
+  </section>
+  <!-- Image Section Below About -->
   <section class="max-w-6xl mx-auto px-6 pb-10">
-    <div class="bg-white p-6 md:p-10 rounded-2xl shadow-lg flex justify-center">
+    <div class="bg-skyblue p-6 md:p-10 rounded-2xl shadow-lg flex justify-center">
       <img 
         src="images/1744107557727.jpg" 
         alt="Alice Mumbe Peter" 
         class="rounded-xl w-full max-w-md shadow-lg"
       />
     </div>
+  </section><!-- Newsletter Section -->
+  <section class="bg-blue-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-4">Stay Updated</h2>
+      <p class="text-lg text-gray-700 mb-6">Subscribe to Alice Mumbe's newsletter for HR tips, updates, and insights.</p>
+  
+      <form action="https://formspree.io/f/mayvblor" method="POST" class="flex flex-col sm:flex-row items-center gap-4 justify-center">
+        <input 
+          type="email" 
+          name="email" 
+          required 
+          placeholder="Enter your email" 
+          class="w-full sm:w-80 px-4 py-3 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+        <button 
+          type="submit" 
+          class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition">
+          Subscribe
+        </button>
+      </form>
+  
+      <p class="text-sm text-gray-500 mt-4">We respect your privacy. No spam ever.</p>
+    </div>
   </section>
+  
   
 
   <!-- Main Sections -->
   <main class="max-w-6xl mx-auto px-6 space-y-10 pb-12">
 
     <!-- Section Template -->
-    <section class="bg-white p-6 md:p-10 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold text-blue-800 mb-4">Profile Summary</h2>
-      <p>
+    <section class="bg-wheat p-6 md:p-10 rounded-2xl shadow-lg">
+      <h2 class="text-2xl font-semibold text-teal-800 mb-4">Profile Summary</h2>
+      <p class="text-golden-700 leading-relaxed text-decoration-italic">
         Passionate and results-driven Human Resource Manager with over X years of experience
         in talent acquisition, employee relations, performance management, and organizational development.
         Adept at aligning HR strategies with business goals and fostering a productive workplace culture.
@@ -59,8 +171,8 @@
     </section>
 
     <section class="bg-white p-6 md:p-10 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold text-blue-800 mb-4">Core Competencies</h2>
-      <ul class="grid grid-cols-2 sm:grid-cols-3 gap-3 list-disc list-inside">
+      <h2 class="text-2xl font-semibold text-lime-800 mb-4">Core Competencies</h2>
+      <ul class="grid grid-cols-3 sm:grid-cols-1 gap-2 list-disc list-inside">
         <li>Talent Acquisition</li>
         <li>Performance Management</li>
         <li>Training & Development</li>
@@ -73,10 +185,10 @@
     <section class="bg-white p-6 md:p-10 rounded-2xl shadow-lg">
       <h2 class="text-2xl font-semibold text-blue-800 mb-4">Education & Certifications</h2>
       <p><strong>BBA in Human Resource Management</strong> –Murang'a University of Technology, 2023</p>
-      <ul class="list-disc list-inside mt-3">
-        <li>Certified Human Resource Professional (CHRP)</li>
-        <li>Labor Law & Compliance Training</li>
-        <li>Advanced Excel for HR</li>
+      <ul class=" list-inside mt-3">
+        <li>1: Certified Human Resource Professional (CHRP)</li>
+        <li>2: Labor Law & Compliance Training</li>
+        <li>3: Advanced Excel for HR</li>
       </ul>
     </section>
 
@@ -121,7 +233,7 @@
       </ul>
     </section>
 
-    <section class="bg-white p-6 md:p-10 rounded-2xl shadow-lg">
+    <section class="text-center bg-white p-6 md:p-10 rounded-2xl shadow-lg">
       <h2 class="text-2xl font-semibold text-blue-800 mb-4">Languages</h2>
       <ul class="list-disc list-inside">
         <li>English – Fluent</li>
@@ -129,10 +241,63 @@
       </ul>
     </section>
 
-  </main>
+  </main> 
+  <!-- Social Media Section -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 pb-10">
+  <div class="bg-white p-6 sm:p-10 rounded-2xl shadow-lg text-center">
+    <h2 class="text-2xl font-semibold text-blue-800 mb-6">Connect with Me</h2>
+    <div class="flex justify-center gap-6 text-blue-700 text-2xl">
+      <a href="mailto:alice.mumbe@email.com" class="hover:text-blue-500 transition" aria-label="Email">
+        📧
+      </a><a href="https://wa.me/+254792685515" target="_blank" class="hover:text-green-500 transition" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" viewBox="0 0 448 512">
+          <path d="M380.9 97.1C339-6.7 207.4-35.6 114.3 39.2 48.5 90.3 22.7 173.1 49.7 248l-33.3 96.4c-4.5 13.1 8.3 25 21.4 20.6l96.3-33.4c73.4 25.2 155.5.7 206.7-64.8 74.8-93.2 45.9-224.8-60-266.7zM224 392c-34.3 0-67.4-9.8-95.9-28.2l-6.8-4.4-57.5 19.9 19.9-57.5-4.4-6.8C66.1 274.4 56 241.3 56 208 56 120.7 120.7 56 208 56s152 64.7 152 152-64.7 152-152 152z"/>
+        </svg>
+      </a>
+      
+      </a>
+      <a href="https://linkedin.com/in/alicemumbe" target="_blank" class="hover:text-blue-400 transition" aria-label="LinkedIn">
+        🔗
+      </a>
+    </div>
+  </div>
+</section><!-- Contact Section -->
+<section id="contact" class="bg-white py-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">Get in Touch</h2>
+    
+    <form action="https://formspree.io/f/yourFormID" method="POST" class="bg-blue-50 p-6 rounded-2xl shadow-lg space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Name</label>
+          <input type="text" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300" />
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Email</label>
+          <input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300" />
+        </div>
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">Message</label>
+        <textarea name="message" rows="5" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-blue-700 text-white font-medium py-2 px-6 rounded-lg hover:bg-blue-800 transition">
+          Send Message
+        </button>
+      </div>
+    </form>
+
+    <p class="text-center text-sm text-gray-500 mt-6">
+      You can also email me at: <a href="mailto:alice.mumbe@email.com" class="text-blue-600 underline">alice.mumbe@email.com</a>
+    </p>
+  </div>
+</section>
+
+
 
   <!-- Footer -->
-  <footer class="text-center py-6 bg-blue-900 text-white">
+  <footer class="text-center py-6 bg-lime-900 text-white">
     &copy; 2025 Alice Mumbe Peter. All rights reserved.
   </footer>
 
